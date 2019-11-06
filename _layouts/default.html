@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="/css/common.css">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>{{ page.title }}</title>
-  </head>
+<!--
+    Type on Strap jekyll theme v2.0.0
+    Copyright 2016-2019 Sylhare
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  {% include head.html %}
   <body>
-    <div class="container">
+    {% include navbar.html %}
+    <div class="content">
       {{ content }}
     </div>
+    {% include footer.html %}
   </body>
-  <footer>
-    <p>{{ page.date | date_to_string }}</p>
-  </footer>
 </html>
